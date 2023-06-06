@@ -1,0 +1,96 @@
+.footer {
+    background-color: #EAF7F9;
+    padding: 1rem 0 .5rem;
+}
+
+.footer .sectionContainer {
+    gap: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 1.5rem;
+}
+
+.footer .sectionContainer .gridOne p {
+    margin-top: 1rem;
+}
+
+.footer .sectionContainer .gridOne .logoDiv .logo {
+    width: 12%;
+}
+
+.footer .sectionContainer .gridOne .socialIcon {
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.footer .sectionContainer .gridOne .socialIcon .icon {
+    height: 50px;
+    width: 30px;
+    border-radius: 10rem;
+    color: #233542;
+    padding: .4rem;
+}
+
+.footer .sectionContainer .gridOne .socialIcon .icon:hover {
+    background-color: #FFAA00;
+    transform: translateY(-7px);
+    transition: .4s ease-in-out;
+    color: #FFFFE5;
+}
+
+.footer .sectionContainer .footerLinks .linkTitle {
+    color: #233542;
+    font-weight: 700;
+    display: block;
+    padding-bottom: 1rem;
+}
+
+.footer .sectionContainer .footerLinks li a {
+    display: block;
+    color: #233542;
+    transition: .4s ease-in-out;
+    padding: .3rem 0;
+}
+
+.footer .sectionContainer .footerLinks li a:hover {
+    transform: translateX(7px);
+    color: #FFAA00;
+}
+
+.footer .copyRightDiv {
+    justify-content: center;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    gap: 1rem;
+    border-top: 1px solid #233542;
+    text-align: center;
+}
+
+.footer .copyRightDiv p {
+    color: #233542;
+}
+
+.footer .copyRightDiv p span {
+    color: #FFAA00;
+}
+
+
+/* Media query for screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+    .footer .sectionContainer {
+        flex-wrap: wrap;
+    }
+
+    .footer .sectionContainer .gridOne,
+    .footer .sectionContainer .footerLinks {
+        width: 100%;
+    }
+
+    .footer .sectionContainer .gridOne .logoDiv .logo {
+        width: 20%;
+    }
+
+    .footer .sectionContainer .gridOne .socialIcon {
+        justify-content: center;
+    }
+}

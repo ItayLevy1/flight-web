@@ -1,0 +1,66 @@
+.info {
+    margin-top: 20px;
+}
+
+.info .infoContainer .titleDiv {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+}
+
+.info .infoContainer .cardsDiv {
+    gap: 5rem;
+    margin: 2rem;
+    display: flex;
+}
+
+.info .infoContainer .cardsDiv .singleCard {
+    background-color: #EAF7F9;
+    padding: 3rem 2rem;
+    border-radius: 10rem;
+    gap: 1rem;
+    text-align: center;
+    margin: auto;
+    height: 40vh;
+    width: 20%;
+    max-width: 250px;
+}
+
+.info .infoContainer .cardsDiv .singleCard:hover {
+    transform: translateY(-10px);
+    transition: .4s ease-in-out;
+}
+
+.info .infoContainer .cardsDiv .singleCard .iconDiv {
+    justify-content: center;
+    margin: auto;
+    background-color: #FFAA00;
+    width: 45px;
+    height: 45px;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+    .info .infoContainer .cardsDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .info .infoContainer .cardsDiv .singleCard {
+        width: 50%;
+        max-width: none;
+    }
+}
+
+.info .infoContainer .cardsDiv .singleCard .iconDiv .icon {
+    color: #233542;
+}
+
+.info .infoContainer .cardsDiv .singleCard .cardTitle {
+    color: #233542;
+    font-size: 2rem;
+    font-weight: 700;
+}

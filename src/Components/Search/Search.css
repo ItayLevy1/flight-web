@@ -1,0 +1,144 @@
+.search {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 90px;
+}
+
+.search .sectionContainer {
+    width: 70%;
+    padding: 1.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 16px;
+    row-gap: 2rem;
+    justify-content: space-around;
+}
+
+.search .sectionContainer .btns {
+    background-color: #EAF7F9;
+    padding: .5rem;
+    border-radius: 1rem;
+    margin: auto;
+    width: 100%;
+    color: #233542;
+}
+
+.search .sectionContainer .btns .singleBtn {
+    padding: .8rem 1.5rem;
+    font-size: 13px;
+    border-radius: 3rem;
+    width: 80%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #EAF7F9;
+    color: #233542;
+  }
+  
+  .search .sectionContainer .btns .singleBtn:hover {
+    background-color: #FFAA00;
+    font-weight: 600;
+    transition: .4s ease;
+  }
+  
+  .search .sectionContainer .btns .singleBtn.active {
+    background-color: #FFAA00;
+    font-weight: 600;
+  }
+
+.sectionContainer .searchInputs {
+    width: 100%;
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.sectionContainer .searchInputs .singleInput .iconDiv {
+    padding: 16px 10px;
+    border-radius: 3rem;
+    background-color: #EAF7F9;
+    margin-right: 1rem;
+}
+
+.sectionContainer .searchInputs .singleInput .iconDiv .icon {
+    color: #233542;
+    opacity: .7;
+}
+
+.sectionContainer .searchInputs .singleInput .texts h4 {
+    padding: 0 0 .7rem 0;
+    color: #233542; 
+    font-weight: 700;
+}
+
+.sectionContainer .searchInputs .singleInput .texts input {
+    width: 95%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.sectionContainer .searchInputs .singleInput .texts input::placeholder {
+    font-size: 12px;
+    opacity: .5;
+}
+
+.btnBlock {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.searchBtn {
+    margin-top: 15px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .search .sectionContainer {
+        width: 90%;
+    }
+
+    .search .sectionContainer .btns .singleBtn {
+        font-size: 12px;
+        width: 90%;
+    }
+
+    .sectionContainer .searchInputs .singleInput .texts h4 {
+        font-size: 14px;
+    }
+
+    .sectionContainer .searchInputs .singleInput .texts input::placeholder {
+        font-size: 10px;
+    }
+}
+
+/* Styles for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .search {
+        position: relative;
+        bottom: 200px;
+        display: block;
+    }
+
+    .search .sectionContainer {
+        width: 70%;
+        padding: 1rem;
+    }
+
+    .search .sectionContainer .btns {
+        font-size: 11px;
+    }
+
+    .search .sectionContainer .btns .singleBtn {
+        font-size: 11px;
+        width: 100%;
+    }
+
+    .sectionContainer .searchInputs {
+        display: block;
+        margin: 10px;
+    }
+
+    .sectionContainer .searchInputs .singleInput {
+        margin: 10px;
+    }
+}

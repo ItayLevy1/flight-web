@@ -1,0 +1,143 @@
+.heading {
+    position: absolute;
+}
+
+.heading h2 {
+    letter-spacing: 1.2rem;
+    z-index: 2;
+}
+
+.heading .content {
+    position: relative;
+    bottom: 0;
+    left: 145px;
+}
+
+.content .cap {
+    text-transform: capitalize;
+    color: #ffaa00;
+    font-size: 4rem;
+    margin: 24px;
+}
+
+.content .any {
+    color: #233542;
+    font-size: 4rem;
+}
+
+
+.imgContainer {
+    position: relative;
+    top: -50px;
+}
+
+.img1 {
+    position: absolute;
+    width: 34%;
+    z-index: -1;
+    left: 34%;
+    top: 70px;
+}
+ 
+
+.img2 {
+    position: relative;
+    top: 30px;
+    right: 135%;
+}
+
+.img3 {
+    position: relative;
+    width: 70%;
+    left: 135%;
+}
+
+.img4 {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    /* height: 100vh; */
+    z-index: 1;
+    right: 50px;
+}
+
+/* Media query for screens with a maximum width of 768px */
+@media (max-width: 768px) {
+    .heading h2 {
+        letter-spacing: 1rem;
+    }
+
+    .heading .content {
+        left: 100px;
+    }
+
+    .content .cap,
+    .content .any {
+        font-size: 3rem;
+    }
+
+    .img1 {
+        width: 50%;
+        left: 25%;
+    }
+
+    .img2 {
+        top: 20px;
+        right: 100%;
+    }
+
+    .img3 {
+        width: 90%;
+        left: 100%;
+    }
+
+    .img4 {
+        right: 0;
+    }
+}
+
+/* Media query for screens with a maximum width of 480px */
+@media (max-width: 480px) {
+    .heading .content {
+        left: 20px;
+        display: flex;
+    }
+
+    .heading h2 {
+        letter-spacing: .4rem;
+    }
+
+    .content .cap,
+    .content .any {
+        font-size: 1rem;
+        margin: 0px;
+    }
+
+    .img1 {
+        width: 90%;
+        left: 0;
+        top: 120px;
+    }
+
+    .img2 {
+        position: relative;
+        width: 50%;
+        top: 0px;
+        right: 10%;
+    }
+
+    .img3 {
+        position: relative;
+        top: -100px;
+        width: 40%;
+        left: 40%;
+    }
+
+    .img4 {
+        top: 100px;
+        position: absolute;
+        right: -230px;
+        width: 250%;
+
+    }
+}

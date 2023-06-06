@@ -1,0 +1,36 @@
+.subscribe {
+    background-color: #EAF7F9;
+    margin-top: 1rem;
+}
+
+.subscribe .sectionContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.subscribe .sectionContainer h2 {
+    margin: 3rem;
+}
+
+.subscribe .sectionContainer .inputDiv {
+    /* flex-direction: column; */
+    background-color: #fff;
+    border-radius: 3rem;
+    width: 280px;
+    margin: auto;
+}
+
+.subscribe .sectionContainer .inputDiv input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 1.3rem .5rem;
+}
+
+.subscribe .sectionContainer .inputDiv input::placeholder {
+    font-size: 13px;
+    opacity: .5;
+    text-align: center;
+}

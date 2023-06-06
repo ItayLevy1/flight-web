@@ -1,0 +1,86 @@
+.support {
+    position: relative;
+    bottom: 20px;
+}
+
+.support .sectionContainer .titleDiv {
+    text-align: center;
+}
+
+.support .sectionContainer .titleDiv small {
+    letter-spacing: .8rem;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #233542;
+    line-height: 1.5rem;
+}
+
+.support .sectionContainer .infoDiv {
+    margin-top: 2.5rem;
+    gap: 1.5rem;
+}
+
+.support .sectionContainer .infoDiv .textDiv {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.support .sectionContainer .infoDiv .textDiv .singleInfo {
+    margin: 10px;
+    width: 20%;
+}
+
+.support .sectionContainer .infoDiv .textDiv .infOne {
+    position: relative;
+    top: 50px;
+}
+
+.support .sectionContainer .infoDiv .textDiv .singleInfo .number {
+    display: flex;
+    background-color: #EAF7F9;
+    padding: 10px 12px;
+    width: 40px;
+    border-radius: 3rem;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #233542;
+}
+
+.support .sectionContainer .infoDiv .textDiv .singleInfo h4 {
+    display: flex;
+}
+
+.support .sectionContainer .infoDiv .textDiv .singleInfo .colorOne {
+    color: #FFAA00;
+}
+
+.support .sectionContainer .infoDiv .imgDiv {
+    margin: auto;
+}
+
+.support .sectionContainer .infoDiv .imgDiv img {
+    margin: 10px;
+    width: 100%;
+    max-width: 420px;
+}
+
+
+/* Media query for screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+    .support .sectionContainer .infoDiv .textDiv {
+        flex-direction: column;
+    }
+
+    .support .sectionContainer .infoDiv .textDiv .infOne {
+        top: 0px;
+    }
+
+    .support .sectionContainer .infoDiv .textDiv .singleInfo {
+        width: 40%;
+    }
+
+    .support .sectionContainer .infoDiv .imgDiv img {
+        max-width: 320px;
+    }
+}
