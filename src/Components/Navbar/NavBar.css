@@ -30,16 +30,20 @@ a {
     background: #fff;
 }
 
+.nav_brand .logo_wrapper {
+    display: flex;
+    align-items: center;
+}
+
 .nav_brand .logo {
-    width: 12%;
+    width: 8%;
 }
 
 .logo_text {
-    position: absolute;
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 600;
-    margin: 12px 0 0 10px;
+    margin-left: 10px; /* Adjust this value as needed */
 }
 
 .btn {
@@ -73,6 +77,12 @@ a {
 }
 
 @media screen and (max-width: 768px) {
+
+    .nav_brand .logo {
+        width: 10%;
+        margin-left: 10px;
+    }
+
     .nav_toggler {
         display: block;
         cursor: pointer;
@@ -97,15 +107,14 @@ a {
 /* Media query for screens with a maximum width of 480px */
 @media screen and (max-width: 480px) {
     .nav_toggler {
-        width: 30vw;
-
+        width: 20vw;
     }
 
     .nav_menu {
         position: absolute;
         z-index: 1000;
+        right: 0;
         top: 7vh;
-        right: 70px;
         background-color: #fff;
     }
 }

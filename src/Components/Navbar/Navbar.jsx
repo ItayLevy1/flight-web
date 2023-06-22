@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { CgMenuGridO } from 'react-icons/cg'
+import Lottie from 'lottie-react';
 
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/logo.json'
 
 import './Navbar.css'
 
@@ -19,8 +20,12 @@ function Navbar() {
   return (
     <nav className="nav">
       <div className="nav_brand">
-        <a href="/"><img src={logo} alt="Logo" className='logo' /> 
-        <span className='logo_text'>celmw</span> </a>
+        <a href="/">
+          <div className="logo_wrapper">
+            <Lottie loop={true} animationData={logo} className='logo'></Lottie>
+            <span className='logo_text'>celmw</span>
+          </div>
+        </a>
       </div>
       <ul className={active}>
         <li onClick={navToggle} className="nav_item">

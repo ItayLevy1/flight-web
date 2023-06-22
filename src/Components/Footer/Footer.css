@@ -77,20 +77,31 @@
 
 /* Media query for screens with a maximum width of 480px */
 @media screen and (max-width: 480px) {
-    .footer .sectionContainer {
-        flex-wrap: wrap;
+
+    .footer .sectionContainer .gridOne {
+        display: flex;
+        flex-direction: column;
+        /* position: absolute; */
+        align-items: center;
     }
 
-    .footer .sectionContainer .gridOne,
-    .footer .sectionContainer .footerLinks {
-        width: 100%;
+    .footer .sectionContainer {
+        flex-wrap: wrap;
     }
 
     .footer .sectionContainer .gridOne .logoDiv .logo {
         width: 20%;
     }
 
+    .footer .sectionContainer .gridOne .logoDiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+    }
+
     .footer .sectionContainer .gridOne .socialIcon {
         justify-content: center;
     }
+
 }

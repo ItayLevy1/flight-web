@@ -68,6 +68,12 @@
 
 /* Media query for screens with a maximum width of 480px */
 @media screen and (max-width: 480px) {
+
+    .support {
+        position: relative;
+        bottom: 120px;
+    }
+    
     .support .sectionContainer .infoDiv .textDiv {
         flex-direction: column;
     }
